@@ -45,3 +45,21 @@ print(player != 'Hummels')
 
 print('Is player == Hazard? I bet True')
 print(player.title() == 'Hazard')
+
+username = 'rAgemOODY'
+
+print('Is username.lower() ?')
+print(username.lower() == "ragemoody")
+
+number = 9
+
+print('Is number > 5 and < 10?')
+print(number > 5 and number < 10)
+
+teams = ['bvb', 'zenit', 'brügge', 'lazio']
+
+print('Is bvb in the list?')
+print('bvb' in teams)
+
+print('Is fcb in my list?')
+print('fcb' in teams)
