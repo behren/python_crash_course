@@ -1,11 +1,11 @@
 favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python',
-    }
+    "jen": "python",
+    "sarah": "c",
+    "edward": "ruby",
+    "phil": "python",
+}
 
-persons = ['nicole', 'sarah', 'phil', 'niclas', 'chris']
+persons = ["nicole", "sarah", "phil", "niclas", "chris"]
 
 for name in persons:
     print(f"Hi {name.title()}")
