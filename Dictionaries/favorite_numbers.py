@@ -9,4 +9,4 @@ favorite_numbers = {
 for name, numbers in favorite_numbers.items():
     print(f"\nDie Lieblingszahlen von {name.title()} sind:")
     for number in numbers:
-        print(number)
+        print(number)test
