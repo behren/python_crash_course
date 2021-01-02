@@ -11,14 +11,3 @@ def send_messages(messages, sent_messages):
         message = messages.pop()
         print(message)
         sent_messages.append(message)
-
-
-messages = ["Hello", "How are you?", "Goodbye"]
-show_messages(messages)
-
-sent_messages = []
-send_messages(messages[:], sent_messages)
-
-print("\nFinal lists:")
-print(messages)
-print(sent_messages)
