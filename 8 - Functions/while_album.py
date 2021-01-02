@@ -1,5 +1,9 @@
 def make_album(artist_name, album_title, tracks=0):
-    album_dict = {"Artist": artist_name, "Title": album_title}
+    
+    album_dict = {
+        "Artist": artist_name, 
+        "Title": album_title
+        }
 
     if tracks:
         album_dict["tracks"] = tracks
