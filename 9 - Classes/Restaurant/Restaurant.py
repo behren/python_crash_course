@@ -19,20 +19,39 @@ class Restaurant:
 
     def set_number_served(self, number):
         """Sets the number of served items."""
+        print(f"Setting served dishes to {number}")
         self.number_served = number
 
     def increment_number_served(self, add_served):
         """Increments the number of served items."""
+        print(f"Incrementing served dishes by {add_served}")
         self.number_served += add_served
 
+    def show_number_served(self):
+        """Tells user the numbers served"""
+        print(f"We served {self.number_served} customers.")
 
-restaurant = Restaurant("McDonalds", "fastfood")
+
+class IceCreamStand(Restaurant):
+    """Describe Ice Cream specific stuff. Yummy! :D"""
+
+    def __init__(self, name, cuisine):
+        """Initialize attributes"""
+        super().__init__(name, cuisine)
+        self.flavors = []
+
+    def show_flavors(self):
+        """Prints a selection of all Ice Cream flavors."""
+        print(f"They offer the following Ice Cream flavors:")
+        for flavor in self.flavors:
+            print(f" -" + flavor.title())
+
+
+restaurant = IceCreamStand("McDonalds", "Fast Food")
+restaurant.flavors = ["vanilla", "chocolate", "strawberry"]
 restaurant.describe_restaurant()
-print(f"Numbers served: {restaurant.number_served}.")
-restaurant.open_restaurant()
-restaurant.number_served = 42
-print(f"Numbers served: {restaurant.number_served}.")
-restaurant.set_number_served(1337)
-print(f"Numbers served: {restaurant.number_served}.")
-restaurant.increment_number_served(420_000)
-print(f"Numbers served: {restaurant.number_served}.")
+restaurant.show_flavors()
+restaurant.set_number_served(300)
+restaurant.show_number_served()
+restaurant.increment_number_served(700)
+restaurant.show_number_served()

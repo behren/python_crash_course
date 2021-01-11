@@ -36,17 +36,38 @@ class User:
         self.login_attempts = 0
 
 
-me = User("Niclas", "Behrendt", "30", "hamburg")
+class Privileges:
+    """Shows user privileges"""
+
+    def __init__(self, privileges=[]):
+        """Initialize attributes"""
+        self.privileges = privileges
+
+    def show_privileges(self):
+        """Shows the admin privileges"""
+        print("\nYou do have the following privileges:")
+        if self.privileges:
+            for privilege in self.privileges:
+                print(f"- " + privilege.title())
+        else:
+            print("This user has no privileges.")
+
+
+class Admin(User):
+    """
+    Describes admin users.
+    """
+
+    def __init__(self, first, last, age, location):
+        """Initialize attributes"""
+        super().__init__(first, last, age, location)
+        self.privileges = Privileges()
+
+
+me = Admin("Niclas", "Behrendt", "30", "hamburg")
+
+me.privileges.privileges = ["create user", "delete user", "ban user", "restore user"]
 me.greet_user()
 me.describe_user()
-print(f"Login attempts: {me.login_attempts}")
-me.increment_login_attempts()
-print(f"Login attempts: {me.login_attempts}")
-me.increment_login_attempts()
-print(f"Login attempts: {me.login_attempts}")
-me.increment_login_attempts()
-print(f"Login attempts: {me.login_attempts}")
-me.increment_login_attempts()
-print(f"Login attempts: {me.login_attempts}")
-me.reset_login_attempts()
-print(f"Login attempts: {me.login_attempts}")
+
+me.privileges.show_privileges()
