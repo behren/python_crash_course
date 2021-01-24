@@ -1,4 +1,4 @@
 In Python you can work with lists, tuples or dictionaries.
-In Python you can use classes, methods and functions for OOP.
-In Python you can work very good with data.
-In Python you can use lots of modules from the default library.
+    In Python you can use classes, methods and functions for OOP.
+    In Python you can work very good with data.
+    In Python you can use lots of modules from the default library.

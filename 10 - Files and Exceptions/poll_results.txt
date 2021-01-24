@@ -1,0 +1,1 @@
+C:/Users/Nick/AppData/Local/Programs/Python/Python39/python.exe "c:/Users/Nick/Documents/Python/python_crash_course/10 - Files and Exceptions/write_to_guest_book.py"
