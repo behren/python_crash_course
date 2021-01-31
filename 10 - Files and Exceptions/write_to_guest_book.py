@@ -1,4 +1,4 @@
-filename = "guestbook.txt"
+filename = "data/guestbook.txt"
 prompt = "Please add your name to our Guest Book."
 prompt += "Enter 'q' or 'exit' to leave."
 

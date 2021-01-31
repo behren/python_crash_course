@@ -1,4 +1,4 @@
-filename = "learning_python.txt"
+filename = "data/learning_python.txt"
 
 with open(filename) as textfile:
     content = textfile.read()

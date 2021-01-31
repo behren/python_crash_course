@@ -1,4 +1,4 @@
-filename = "guest.txt"
+filename = "data/guest.txt"
 
 print("Please tell us your name")
 guest = input()

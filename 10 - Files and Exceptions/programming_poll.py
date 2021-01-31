@@ -1,4 +1,4 @@
-filename = "poll_results.txt"
+filename = "data/poll_results.txt"
 prompt = "Welcome to our poll. Please tell us why you like programming."
 prompt += "Enter 'q' or 'exit' to leave."
 

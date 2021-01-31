@@ -1,4 +1,4 @@
-filename = "DerSchatzImSilbersee.txt"
+filename = "data/DerSchatzImSilbersee.txt"
 word = "die"
 
 try:
