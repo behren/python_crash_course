@@ -1,5 +1,5 @@
 import unittest
-from city_functions import get_city_country
+import city_functions
 
 
 class CityTestCases(unittest.TestCase):
@@ -7,12 +7,12 @@ class CityTestCases(unittest.TestCase):
 
     def test_city_country(self):
         """Testing the function with only the city and country variable"""
-        city_country = get_city_country("hamburg", "germany")
+        city_country = city_functions.get_city_country("hamburg", "germany")
         self.assertEqual(city_country, "Hamburg, Germany")
 
     def test_city_country_population(self):
         """Testing the function, including the population variable"""
-        city_country_population = get_city_country(
+        city_country_population = city_functions.get_city_country(
             "hamburg", "germany", population="1.850.000"
         )
         self.assertEqual(
